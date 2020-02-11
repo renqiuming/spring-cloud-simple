@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rqm.springclouddomain1.mapper.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.rqm.springclouddomain1.entity.User">
+        <id column="id" property="id" />
+        <result column="mobile" property="mobile" />
+        <result column="username" property="username" />
+        <result column="password" property="password" />
+        <result column="b_salt" property="b_salt" />
+        <result column="b_salt_update_time" property="b_salt_update_time" />
+        <result column="nickname" property="nickname" />
+        <result column="identity_card_name" property="identity_card_name" />
+        <result column="email" property="email" />
+        <result column="remarks" property="remarks" />
+        <result column="sex" property="sex" />
+        <result column="head_pic_url" property="head_pic_url" />
+        <result column="birthday" property="birthday" />
+        <result column="employe_num" property="employe_num" />
+        <result column="type" property="type" />
+        <result column="is_available" property="is_available" />
+        <result column="is_deleted" property="is_deleted" />
+        <result column="version_no" property="version_no" />
+        <result column="create_userid" property="create_userid" />
+        <result column="create_username" property="create_username" />
+        <result column="create_usermac" property="create_usermac" />
+        <result column="create_time" property="create_time" />
+        <result column="create_time_db" property="create_time_db" />
+        <result column="server_ip" property="server_ip" />
+        <result column="update_userid" property="update_userid" />
+        <result column="update_username" property="update_username" />
+        <result column="update_userip" property="update_userip" />
+        <result column="update_usermac" property="update_usermac" />
+        <result column="update_time" property="update_time" />
+        <result column="update_time_db" property="update_time_db" />
+        <result column="client_versionno" property="client_versionno" />
+        <result column="company_id" property="company_id" />
+        <result column="create_userip" property="create_userip" />
+        <result column="original_id" property="original_id" />
+        <result column="identity_type" property="identity_type" />
+        <result column="parent_id" property="parent_id" />
+        <result column="company_name" property="company_name" />
+        <result column="contact_person" property="contact_person" />
+        <result column="telephone" property="telephone" />
+        <result column="address" property="address" />
+        <result column="status" property="status" />
+        <result column="points" property="points" />
+        <result column="user_province" property="user_province" />
+        <result column="user_city" property="user_city" />
+        <result column="user_region" property="user_region" />
+        <result column="user_address" property="user_address" />
+        <result column="post_code" property="post_code" />
+        <result column="check_time" property="check_time" />
+        <result column="check_user_id" property="check_user_id" />
+        <result column="is_certification" property="is_certification" />
+        <result column="legal_person_name" property="legal_person_name" />
+        <result column="legal_personNo_number" property="legal_personNo_number" />
+        <result column="organization_code" property="organization_code" />
+        <result column="business_license_number" property="business_license_number" />
+        <result column="business_license_url" property="business_license_url" />
+        <result column="company_type" property="company_type" />
+        <result column="business_scope" property="business_scope" />
+        <result column="business_start" property="business_start" />
+        <result column="business_end" property="business_end" />
+        <result column="registered_address" property="registered_address" />
+        <result column="registered_capital" property="registered_capital" />
+        <result column="population" property="population" />
+        <result column="birthday_update_count" property="birthday_update_count" />
+        <result column="qq" property="qq" />
+        <result column="source" property="source" />
+        <result column="f_algorithm_version" property="f_algorithm_version" />
+        <result column="b_algorithm_version" property="b_algorithm_version" />
+        <result column="f_salt" property="f_salt" />
+        <result column="f_salt_update_time" property="f_salt_update_time" />
+        <result column="platform_id" property="platform_id" />
+        <result column="platform_group_id" property="platform_group_id" />
+        <result column="entity_type" property="entity_type" />
+        <result column="entity_id" property="entity_id" />
+        <result column="remark" property="remark" />
+        <result column="exter_id" property="exter_id" />
+        <result column="dial_code" property="dial_code" />
+    </resultMap>
+
+</mapper>
