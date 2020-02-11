@@ -1,15 +1,20 @@
-package com.rqm.tool.base;
+package com.rqm.tool;
+
+import org.junit.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.atomic.LongAdder;
 
 /**
  * @author renqiuming
- * @date 2020/2/3 下午6:07
+ * @date 2020/2/11 下午4:09
  */
-public class CommonUtils {
+@SpringBootTest
+public class BaseTest {
 
-    public static void main(String[] args) {
+    @Test
+    public void randomTest(){
         // 计数器
         LongAdder count = new LongAdder();
         count.increment();
@@ -19,4 +24,5 @@ public class CommonUtils {
         System.out.println(ThreadLocalRandom.current().nextInt(10));
 
     }
+
 }

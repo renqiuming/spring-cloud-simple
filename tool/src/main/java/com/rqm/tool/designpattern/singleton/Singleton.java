@@ -20,4 +20,8 @@ public class Singleton {
         }
         return instance;
     }
+
+    public void method(){
+        System.out.println("method");
+    }
 }

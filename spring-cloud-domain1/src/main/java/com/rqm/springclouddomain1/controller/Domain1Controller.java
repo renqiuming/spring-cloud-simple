@@ -31,29 +31,20 @@ public class Domain1Controller {
      */
     public String domain1Service(@RequestParam String name) throws Exception {
         String result = "success";
-        // 测试 服务
+        // 测试 调用服务
         try {
             result = baseService.baseService(name + " " + env + " is service");
         } catch (Exception ex) {
             throw new Exception("远程调用失败", ex);
         }
-        /*
-        // 测试 线程
-        ThreadPoolManagementUtils.getMainThreadPool().execute(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("thread run");
-            }
-        });
-
-        // 测试 策略模式
-        OrderContext context = new OrderContext();
-        context.setType(2);
-        OrderTemplateBuilder.getInstance().build(context).execute(context);
 
         // 测试 连接数据库
-        Object users = userService.selectById(1);
-        */
+        try {
+            Object users = userService.selectById(1);
+        }catch (Exception e){
+
+        }
+
         return result;
     }
 

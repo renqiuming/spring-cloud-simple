@@ -1,23 +1,23 @@
-package com.rqm.tool.lambda;
+package com.rqm.tool;
 
-import com.rqm.tool.lambda.po.User;
+import com.rqm.tool.model.User;
+import org.junit.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+
 /**
  * @author renqiuming
- * @date 2020/2/3 下午12:03
+ * @date 2020/2/11 下午4:22
  */
-public class ListTest {
+@SpringBootTest
+public class LambdaTest {
 
-    public static void main(String[] args) {
-        testListAndMap();
-        testSort();
-    }
-
-    private static void testListAndMap(){
+    @Test
+    public void listAndMapTest(){
         List<User> userList=buildData();
         userList.forEach(item -> System.out.println(item.getName()));
         List<Long> userIdList=userList.stream().map(User::getId).collect(Collectors.toList());
@@ -27,7 +27,8 @@ public class ListTest {
         int i=0;
     }
 
-    private static void testSort(){
+    @Test
+    public void sortTest(){
         List<User> userList=buildData();
         userList.sort((a,b)-> a.getId().compareTo(b.getId()));
         userList.forEach(u->System.out.println(u.getName()));
